@@ -36,7 +36,6 @@ function sumPoengKortstokk {
     $poengKortstokk = 0 
 
     foreach ($kort in $kortstokk) {
-        # Undersøk hva en Switch er
         $poengKortstokk += switch ($kort.value) {
             { $_ -cin @('J', 'Q', 'K') } { 10 }
             'A' { 11 }
