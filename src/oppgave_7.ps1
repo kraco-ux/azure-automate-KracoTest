@@ -74,7 +74,7 @@ $kortstokk = $kortstokk[2..$kortstokk.Count]
 $magnus = $kortstokk[0..1]
 $kortstokk = $kortstokk[2..$kortstokk.Count]
 
-#Funksjon skrivUtResultat: Sammenligner resultatene for meg og Magnus mot sumPoengKortstokk, skriver ut vinner.
+#Funksjon skrivUtResultat: Skriver ut resultat meg og Magnus + vinner.
 function skrivUtResultat {
     param (
         [string]
@@ -92,6 +92,7 @@ function skrivUtResultat {
 # Blackjack er resultat score = 21
 $blackjack = 21
 
+#Sammenligner poeng resultat og velger vinner
 if (((sumPoengKortstokk -kortstokk $meg) -eq $blackjack) -and ((sumPoengKortstokk -kortstokk $magnus) -eq $blackjack)) {
     skrivUtResultat -vinner "draw" -kortStokkMagnus $magnus -kortStokkMeg $meg
 }
