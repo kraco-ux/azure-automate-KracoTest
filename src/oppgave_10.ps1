@@ -129,6 +129,6 @@ if ((sumPoengKortstokk -kortstokk $magnus) -gt $blackjack) {
    exit
 }
 
-#Slutt resultat Vinner er Magnus
+#Slutt resultat Vinner
 skrivUtResultat -vinner "magnus" -kortStokkMagnus $magnus -kortStokkMeg $meg
 
