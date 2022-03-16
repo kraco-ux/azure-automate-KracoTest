@@ -8,7 +8,7 @@ jobs:
     defaults:
       run:
         shell: pwsh
-        working-directory: ${}
+        working-directory: ${{ github.workspace }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,7 +20,7 @@ jobs:
       - name: Login via Az module
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.Naeem_Action_Workflows }}
           enable-AzPSSession: true
           
       - name: Install and cache PowerShell modules
