@@ -22,7 +22,7 @@ jobs:
       - name: 'Run cleanup script'
         uses: azure/powershell@v1
         with:
-          inlineScript:  .\src\funcApp\cleanup.ps1 -firstname 'Naeem' -resourceGroupName 'Naeem-workshop-ksckbaz7ofqi6'
+          inlineScript:  .\src\funcApp\cleanup.ps1 -resourceGroupName 'Naeem-workshop-ksckbaz7ofqi6'
           azPSVersion: "latest"
 
       - name: 'logout from azure'
