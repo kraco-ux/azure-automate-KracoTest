@@ -29,4 +29,4 @@ jobs:
           modules-to-cache: Az.Storage, Az.Functions, Az.Websites, Az.Resources, Az.Accounts
 
       - name: Deploy Function app
-        run: .src\funcapp\deployWithBicep.ps1
+        run: .src\Gjennbruk\azure-gi-det-videre\src\funcApp\deployWithBicep.ps1
